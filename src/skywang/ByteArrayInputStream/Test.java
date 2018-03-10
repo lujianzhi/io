@@ -1,4 +1,4 @@
-package skywang.bytearrayinputstream;
+package skywang.ByteArrayInputStream;
 
 import java.io.ByteArrayInputStream;
 
@@ -56,8 +56,8 @@ public class Test {
 
         byte[] buf = new byte[LEN];
         //将长度为LEN的数据存入buf中
-        byteArrayInputStream.read(buf, 0, LEN);
-        String bufStr = new String(buf);
+        int length = byteArrayInputStream.read(buf, 0, LEN);
+        String bufStr = new String(buf, 0, length);
         System.out.println("新数组内容为 : " + bufStr);
 
         //重置“字节流”：即，将“字节流中下一个被读取的位置”重置到“mark()所标记的位置”，即0x66。

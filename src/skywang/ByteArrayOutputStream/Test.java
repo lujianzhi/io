@@ -1,4 +1,4 @@
-package skywang.bytearrayoutputstream;
+package skywang.ByteArrayOutputStream;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
